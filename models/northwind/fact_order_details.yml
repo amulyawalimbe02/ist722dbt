@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: fact_order_details
+    description: "Fact table combining orders and order details for analysis."
+    columns:
+      - name: orderid
+        tests:
+          - not_null
+      - name: productid
+        tests:
+          - not_null
+      - name: customerid
+        tests:
+          - not_null
+      - name: employeeid
+        tests:
+          - not_null
+      - name: shipperid
+        tests:
+          - not_null
+      - name: total_price
+        description: "Calculated field for total order price."

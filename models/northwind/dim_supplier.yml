@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: dim_supplier
+    description: Supplier dimension for Northwind dataset.
+    columns:
+      - name: supplierid
+        tests:
+          - not_null
+          - unique
+      - name: companyname
+      - name: contactname
+      - name: contacttitle
+      - name: address
+      - name: city
+      - name: region
+      - name: postalcode
+      - name: country
+      - name: phone

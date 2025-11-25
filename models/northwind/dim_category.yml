@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: dim_category
+    description: Category dimension for Northwind dataset.
+    columns:
+      - name: categoryid
+        tests:
+          - not_null
+          - unique
+      - name: categoryname
+      - name: description

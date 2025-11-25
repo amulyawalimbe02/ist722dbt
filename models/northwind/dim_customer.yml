@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: dim_customer
+    description: Customer dimension built from Northwind Customers table.
+    columns:
+      - name: customerid
+        tests:
+          - not_null
+          - unique
+      - name: companyname
+      - name: contactname
+      - name: contacttitle
+      - name: country
+      - name: city
+      - name: region
+      - name: postalcode
+      - name: phone
