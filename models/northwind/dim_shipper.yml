@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: dim_shipper
+    description: Shipper dimension.
+    columns:
+      - name: shipperid
+        tests:
+          - not_null
+          - unique
+      - name: companyname
+      - name: phone

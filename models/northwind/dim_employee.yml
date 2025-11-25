@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: dim_employee
+    description: Employee dimension created from Northwind Employees table.
+    columns:
+      - name: employeeid
+        tests:
+          - not_null
+          - unique
+      - name: firstname
+      - name: lastname
+      - name: title
+      - name: titleofcourtesy
+      - name: birthdate
+      - name: hiredate
+      - name: address
+      - name: city
+      - name: region
+      - name: postalcode
+      - name: country
+      - name: homephone

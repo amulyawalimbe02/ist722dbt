@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_order_date
+    description: Order date dimension.
+    columns:
+      - name: orderid
+        tests:
+          - not_null
+          - unique
+      - name: orderdate

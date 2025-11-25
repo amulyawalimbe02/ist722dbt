@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: dim_product
+    description: Product dimension for Northwind dataset.
+    columns:
+      - name: productid
+        description: Primary key for product
+        tests:
+          - not_null
+          - unique
+      - name: productname
+      - name: supplierid
+      - name: categoryid
+      - name: quantityperunit
+      - name: unitprice
+      - name: unitsinstock
+      - name: unitsonorder
+      - name: reorderlevel
+      - name: discontinued

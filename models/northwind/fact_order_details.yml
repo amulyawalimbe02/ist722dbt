@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: fact_order_details
+    description: Fact table for order details including revenue calculation.
+    columns:
+      - name: orderid
+        tests:
+          - not_null
+      - name: productid
+      - name: unitprice
+      - name: quantity
+      - name: discount
+      - name: total_price
+      - name: customerid
+      - name: employeeid
+      - name: shipperid
+      - name: orderdate
