@@ -1,20 +1,9 @@
 version: 2
 
 sources:
-  - name: conformed
-    database: raw
-    schema: conformed
-
-    tables:
-      - name: DateDimension
-        columns:
-          - name: DateKey
-            tests:
-              - unique
-
   - name: northwind
-    database: raw
-    schema: northwind
+    database: RAW
+    schema: NORTHWIND
 
     tables:
       - name: Customers
